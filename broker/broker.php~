@@ -1,0 +1,36 @@
+<? php 
+
+function check($length){
+if($length <2){
+return false;
+}
+return True;
+}
+
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+$n=$_POST['n'];
+$l=$_POST['l'];
+$length1=strlen($n);
+$length2=strlen($l);
+//if(check($length1){
+ 	/* if(check($length2){
+	       if(!is_numeric($n)){
+			if(!is_numeric ($l)){
+				header("Location: ../yei.php?name=$n&last=$l");
+				exit;			
+			}
+		}
+	}
+*/
+echo $n. $l;
+}
+
+//header("Location: ../index.php?error=1");
+
+
+
+}
+
+
+?>
