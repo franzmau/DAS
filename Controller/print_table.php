@@ -1,6 +1,6 @@
 <?php
 function show_table($id){
-
+	//create a table and a row for each report the user has. 
 
 	 define('DB_SERVER', 'localhost');
 	 define('DB_USERNAME', 'root');

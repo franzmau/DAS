@@ -1,4 +1,5 @@
 <?php
+//include all the libraries
   include('../Model/Config.php');
  include('./session.php');
    $income ;
@@ -9,6 +10,7 @@
    $i;
    $me;
    $dif;
+//declare all the variables in order to make them globals
 
 function verify($S_id,$u_id) {
 
@@ -19,7 +21,7 @@ function verify($S_id,$u_id) {
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
  $ses_sql=mysqli_query($db,"select * from Report where id_user = '$u_id' and id='$S_id' ");
-
+ //this checks that the persons created that report
  
  $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
  $count = mysqli_num_rows($ses_sql);
@@ -46,6 +48,7 @@ function verify($S_id,$u_id) {
 }
 
 function service(){
+	//this prints all the recommendation for the services depending of the income 
 	if(!$GLOBALS['test1']){
 
 		echo "<p>You are having an <em>excesive lack of money </em>.  There are two main reasons people have this problem. <br>
@@ -98,7 +101,7 @@ function service(){
  }
    
  function transport(){
-
+//this prints all the recommendation for the transport depending of the income  and the difference between the income and the expenses. This print a special format. 
 
  	if(!$GLOBALS['test1']){
 
@@ -142,7 +145,7 @@ function service(){
  }
 
  function supplies (){
-
+//this prints all the recommendation for the supplies depending of the income  and the difference between the income and the expenses.
 if(!$GLOBALS['test1']){
 
 		echo "<p>Buy in the cheapest market you found and tried to cook your own food.<br></p>";
@@ -192,7 +195,7 @@ if(!$GLOBALS['test1']){
 
 
  function entertainment(){
-
+//this prints all the recommendation for the entretainment depending of the income  and the difference between the income and the expenses. This print a special format. 
  	if(!$GLOBALS['test1']){
 
 		echo "<p style='text-align: center;color: #fff;' >My only reccomendation for you is: Please don't get drunk and try not to buy alcohol. <br></p>";
@@ -285,7 +288,7 @@ if(!$GLOBALS['test1']){
  }
 
 function tax(){
-	
+	//this prints all the recommendation for the tax depending of the income
 	if(!$GLOBALS['test1']){
 
 		echo "<p>Sorry I don't have information for you.<br></p>";
@@ -331,7 +334,7 @@ function tax(){
 
 
 function  clothing(){
-
+//this prints all the recommendation for the clothing depending of the income  and the difference between the income and the expenses. This print a special format. 
 	if(!$GLOBALS['test1']){
 
 		echo "<p style='text-align: center;color: #fff;'>Sorry I don't have information for you.<br></p>";
@@ -396,7 +399,7 @@ function  clothing(){
 
 function incidental(){
 
-
+//this prints all the recommendation for the incidental  depending of the income 
 	if(!$GLOBALS['test1']){
 
 		echo "<p>I really hope that you don't get sick. <br></p>";
@@ -434,7 +437,7 @@ function incidental(){
 }
 
 function appliances(){
-
+//this prints all the recommendation for the appliances depending of the income  and the difference between the income and the expenses. This print a special format. 
 if(!$GLOBALS['test1']){
 
 		echo "<p style='text-align: center;color: #fff;'>Sorry I don't have information for you.<br></p>";
@@ -484,7 +487,7 @@ if(!$GLOBALS['test1']){
 
 
 function savings(){
-	
+	//this prints all the recommendation for the savings depending of the income  and the difference between the income and the expenses. This print a special format. 
 	if(!$GLOBALS['test1']){
 
 		echo "<p>Sorry I don't have any advice for you.  <br></p>";
@@ -530,7 +533,7 @@ function savings(){
 
 }
 
-
+//this function checks that you earn more than the basics. 
  function test(){
  	if( $GLOBALS['income']<6000 ||  $GLOBALS['dif']<4000){
  		return false;

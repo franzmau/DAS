@@ -4,7 +4,8 @@
       
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
-    
+      //this validate that the numer you type in the income 
+    // is bigger than the one you put as expense. 
 
       $income = mysqli_real_escape_string($db,$_POST['income']);
       $expense = mysqli_real_escape_string($db,$_POST['expense']);
@@ -13,7 +14,7 @@
          $count = count($numero);
 
 
-
+         //create the query 
       $first="`id_user`, `income`, `date`, `costs` ";
       $values="'$id','$income',now(),'$expense'";
       if($count>0){
@@ -38,7 +39,7 @@
       
      
    }else{
-   // echo "<script>alert('Sorry your Income is lower than your expense, I can't do anything with that'); location.href='../Views/welcome.php';</script>";
+   
    echo "<script>alert('Sorry your Income is lower than your expense, I can \'t do anything with that'); location.href='../Views/welcome.php';</script>";
    }
 

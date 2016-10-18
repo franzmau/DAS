@@ -365,12 +365,12 @@
  	<div class="col-md-6">
  		<div class="contact-right">		
  		    <div class="form">				
-				  			<form method="post" action="#">
-							    	<input type="text" class="textbox" value=" Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-							    	<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				  			<form method="post" action = "./Controller/sender.php"">
+							    	<input type="text" name="fname" class="textbox" value=" Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							    	<input type="text" name="email" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
 										<div class="clearfix"></div>	
 								    <div>
-								    	<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Message';}">Message</textarea>
+								    	<textarea value="Message:" name="mssg" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Message';}">Message</textarea>
 								    </div>
 								<div class="span4">
 							    	<a href="#">

@@ -1,8 +1,8 @@
 <?php
 include("../Model/Config.php");
-
+//this the controller for the tables. 
 if (isset($_POST['view']) ) {
-    // create PDO instance; assign it to $db variable
+  
    $a=$_POST['id'];
   header("location:../Views/show.php?id=$a");
 

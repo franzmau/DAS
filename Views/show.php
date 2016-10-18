@@ -5,7 +5,7 @@
    session_start();
    
    verify($planning,$_SESSION['pid']);
-
+   //check if the user can check that plan
 ?>
 
 

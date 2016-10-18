@@ -1,14 +1,12 @@
 <?php
 /*
  **************************************
- *									  *
- * Config here                        *
- *									  *
+ *THIS IS TO SEND THE EMAIL t					  *
  **************************************
  */
 
-$to = 'YOUR_EMAIL_ADDRESS';
-$siteName = "YOUR_SITE_NAME";
+$to = 'franzmau@hotmail.com';
+$siteName = "Finance ";
 
 /*
  *************************************************************
@@ -20,8 +18,9 @@ $siteName = "YOUR_SITE_NAME";
 
 $name = $_POST['fname'];
 $mail = $_POST['email'];
-$subject = $_POST['subj'];
+
 $message = $_POST['mssg'];
+
 
 if (isset($name) && isset($mail) && isset($message)) {
 	

@@ -27,7 +27,7 @@
 		<script src="../js/modernizr.custom.js"></script>
 		
 
-	    <!--scroll-->
+	    <!--scroll This is the method that allows to go from top to bottom  -->
  		<script type="text/javascript">
 			$(document).ready(function() {
 			
@@ -56,7 +56,7 @@
 		  <fieldset style='text-align: center;'>
 		  	<input type="text"   name="name" id="email" value="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name';}">
 		  	<input type="text"   name="surname" id="email" value="surname" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'surname';}">
-		  	<input type="text"   name="email" id="email" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+		  	<input type="email"   name="email" id="email" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
 		  	<label>password</label><input type="password" onfocus="this.value = '';"   name="psw" id="email"  value="password">
 		  	<label>Repeat password</label><input type="password"  onfocus="this.value = '';"  name="psw2" class="textbox"  value="repeat password">
 
