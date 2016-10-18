@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Welcome</title>
+		<title>Log in</title>
 		<link href="../css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 		<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<script type="text/javascript" src="../js/bootstrap.js"></script>
@@ -49,7 +49,7 @@
 		
 		<!-- //End fancyBox light-box -->	
 </head>   
-   <body>
+   <body style="background: #fff;">
    	<div style='text-align: center;'>  
        <form id="loginForm"  action = "../Controller/suscribe.php" method = "post" class="col-md-offset-4" style='text-align: center; float: inherit !important;'>	
         <fieldset style='text-align: center;'>

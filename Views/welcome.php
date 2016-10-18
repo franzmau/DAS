@@ -103,6 +103,7 @@
 	 						<div class="left">
 							<ul class="menu list-unstyled">		
 								<li class="active"><a href="../Controller/Logout.php" class="scroll">Log out</a></li>
+								<li class="active"><a href="./user.php" class="scroll">Edit info </a></li>
 								
 								
 							</ul>
@@ -123,6 +124,7 @@
 					        <nav class="nav">
 					            <ul class="nav-list">
 					                <li class="nav-item"><a href="../Controller/Logout.php">Log Out</a></li>
+					                <li class="nav-item"><a href="./user.php" class="scroll">Edit info </a></li>
 					                		
 					            </ul>					            
 				
